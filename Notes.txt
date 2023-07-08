@@ -1,0 +1,13 @@
+# to start a project
+django-admin startproject mysite
+
+# to run db migrations
+python manage.py migrate
+
+# to run using uvicorn
+uvicorn mysite.asgi:application
+
+# make migrations of an applicatio i.e creates sql code for applying it on db
+python manage.py makemigrations blog
+# executes the sql code generated
+python manage.py migrate
